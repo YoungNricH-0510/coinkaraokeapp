@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Song data: Title//Artist//Album -->
+    <string-array name="song_data_array">
+        <item>Nothin\' On You (Feat. Bruno Mars)//B.o.B//Nothin\' On You (Feat. Bruno Mars)</item>
+        <item>Bad Romance//Lady Gaga//Bad Romance</item>
+        <item>Just The Way You Are//Bruno Mars//Just The Way You Are</item>
+        <item>DJ Got Us Fallin\' In Love (feat. Pitbull)//Usher//Versus</item>
+        <item>If We Ever Meet Again (Feat. Katy Perry)//Timbaland//Shock Value II</item>
+        <item>Telephone (Feat. Beyoncé)//Lady Gaga//The Fame Monster</item>
+        <item>Just A Dream//Nelly//Just A Dream</item>
+        <item>Airplanes (Feat. Hayley Williams Of Paramore)//B.o.B//Airplanes (Feat. Hayley Williams Of Paramore)</item>
+        <item>Put Your Records On//Corinne Bailey Rae//Corinne Bailey Rae (Special Edition)</item>
+        <item>In My Head//Jason Derulo//In My Head</item>
+        <item>Breakeven//The Script//Breakeven</item>
+        <item>Need You Now//Lady Antebellum//Need You Now</item>
+        <item>Hey, Soul Sister//Train//Hey, Soul Sister</item>
+        <item>Cooler Than Me//Mike Posner//Cooler Than Me</item>
+        <item>Only Girl (In The World)//Rihanna//Loud</item>
+        <item>Empire State Of Mind (Feat. Alicia Keys)//JAY-Z//The Blueprint 3</item>
+        <item>Haven\'t Met You Yet//Michael Buble//Crazy Love</item>
+        <item>September//Daughtry//Leave This Town</item>
+    </string-array>
+
+    <!-- Questions for chat bot -->
+    <string-array name="question_array">
+        <item>Can I make a reservation without signing in?</item>
+        <item>How can I check my reservation?</item>
+        <item>How can I charge coin?</item>
+        <item>How much time can I reserve?</item>
+        <item>How much does it cost?</item>
+        <item>What is the benefit of being a member?</item>
+    </string-array>
+
+    <!-- Answers for chat bot -->
+    <string-array name="answer_array">
+        <item>Yes. You can make a reservation without signing in if you have a phone number.</item>
+        <item>
+            If you are signed in, you can check your reservation at the bottom of this page.
+            If you are not signed in, you can check your reservation using your phone number which you submitted when making a reservation.
+        </item>
+        <item>
+            You can charge coin in "Coin" section of the next page. You can pay either with a VISA card, or with your Paypal/Amazon account.
+        </item>
+        <item>You can reserve up to 3 hours in a single reservation. Also, you must reserve 30 minutes at least.</item>
+        <item>It costs 1000 coins for every 30 minutes.</item>
+        <item>1. You can use coin and send it to your friends.\n
+            2. You can make a list of your favorite songs.\n
+            3. You can participate in weekly polls.\n
+        </item>
+    </string-array>
+
+</resources>

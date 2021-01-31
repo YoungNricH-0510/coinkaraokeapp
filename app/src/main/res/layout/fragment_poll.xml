@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#444"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    tools:context=".CategoryFragment">
+
+    <!-- Best Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#333"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/best_of_the_week"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#334"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/no_best_post_yet"
+                android:textColor="#AAA" />
+
+            <include
+                android:id="@+id/view_best_post"
+                layout="@layout/item_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- Post Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#333">
+
+            <!-- Tab Layout-->
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_toStartOf="@id/btn_write_post"
+                android:background="#333"
+                app:tabSelectedTextColor="#FFA"
+                app:tabTextColor="#AAA">
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tab_hot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hot" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tab_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new2" />
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <ImageButton
+                android:id="@+id/btn_write_post"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/ic_write"
+                android:contentDescription="@string/write_new_post" />
+
+        </RelativeLayout>
+
+        <!-- Recycler view for posts -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_post"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#334"
+            android:padding="16dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

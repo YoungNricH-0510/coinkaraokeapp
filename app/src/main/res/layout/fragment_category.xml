@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#444"
+    android:padding="16dp"
+    tools:context=".CategoryFragment">
+
+    <!-- Tab Layout-->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="#333"
+        app:tabSelectedTextColor="#FFA"
+        app:tabTextColor="#AAA">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/favorite" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ranking" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <!-- Recycler view for songs -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_song"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_layout"
+        android:background="#334"
+        android:padding="16dp" />
+
+</RelativeLayout>

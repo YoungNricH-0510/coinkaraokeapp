@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_begin_time"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="@string/app_name"
+                    android:drawableStart="@drawable/ic_begin_time"
+                    android:drawablePadding="8dp"
+                    android:enabled="false"
+                    android:layout_marginEnd="8dp"
+                    android:hint="@string/begin_time"
+                    android:inputType="time"
+                    android:textColor="#777"
+                    android:textColorHint="#777" />
+
+                <ImageButton
+                    android:contentDescription="@string/set_begin_time"
+                    android:id="@+id/ibtn_enter_begin_time"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#333"
+                    android:src="@drawable/ic_check" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_end_time"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:autofillHints="@string/app_name"
+                    android:drawableStart="@drawable/ic_end_time"
+                    android:drawablePadding="8dp"
+                    android:enabled="false"
+                    android:hint="@string/end_time"
+                    android:inputType="time"
+                    android:textColor="#777"
+                    android:textColorHint="#777" />
+
+                <ImageButton
+                    android:contentDescription="@string/set_end_time"
+                    android:id="@+id/ibtn_enter_end_time"
+                    android:layout_width="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="30dp"
+                    android:background="#333"
+                    android:src="@drawable/ic_check" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_price"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:paddingTop="10dp"
+            android:drawableTop="@drawable/ic_coin" />
+
+    </LinearLayout>
+
+    <TimePicker
+        android:id="@+id/time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

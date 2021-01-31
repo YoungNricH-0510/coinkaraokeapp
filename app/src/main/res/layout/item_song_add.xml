@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:background="#334"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <TextView
+        android:id="@+id/txt_song_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="4dp"
+        android:layout_toStartOf="@id/ibtn_add_to_favorite"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Empire State Of Mind (Feat. Alicia Keys)"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/txt_song_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_song_title"
+        android:text="JAY-Z"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/txt_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_song_title"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@id/txt_song_artist"
+        android:text="|"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/txt_song_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_song_title"
+        android:layout_toStartOf="@id/ibtn_add_to_favorite"
+        android:layout_toEndOf="@id/txt_border"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="The Blueprint 3"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/ibtn_add_to_favorite"
+        android:layout_width="28sp"
+        android:layout_height="28sp"
+        android:layout_alignBottom="@id/txt_song_artist"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_add"
+        android:contentDescription="@string/add_to_favorite" />
+
+</RelativeLayout>

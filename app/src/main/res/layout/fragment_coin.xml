@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#444"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <!-- Charge Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#333"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/your_coin"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#334"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/txt_coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:drawablePadding="8dp"
+                android:text="3000"
+                android:textSize="20sp"
+                app:drawableStartCompat="@drawable/ic_coin"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/txt_coin_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_coin"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/btn_charge_coin"
+                android:layout_marginEnd="10dp"
+                android:text="3 hours available"
+                android:textColor="#999"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/btn_charge_coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txt_coin"
+                android:layout_alignBottom="@id/txt_coin_hours"
+                android:layout_alignParentEnd="true"
+                android:text="@string/charge_now"
+                android:textColor="#CCC" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- Send to Friends Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#333"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/send_to_friends"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#334"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/edit_send_amount"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@id/btn_send_coin"
+                android:autofillHints="@string/app_name"
+                android:drawableStart="@drawable/ic_coin"
+                android:drawablePadding="8dp"
+                android:hint="@string/amount"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btn_send_coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/send"
+                android:textColor="#CCC" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- Send to Friends Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#333"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/scan_qr_code"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#334"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/btn_scan_qr"
+                android:text="@string/scan_qr_code_to_charge_coin" />
+
+            <Button
+                android:id="@+id/btn_scan_qr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/scan"
+                android:textColor="#CCC" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

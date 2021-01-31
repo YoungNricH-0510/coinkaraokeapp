@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/edit_post_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="@string/app_name"
+        android:drawableStart="@drawable/ic_title"
+        android:drawablePadding="8dp"
+        android:hint="@string/title"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edit_post_youtube_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="@string/app_name"
+        android:drawableStart="@drawable/ic_video"
+        android:drawablePadding="8dp"
+        android:hint="@string/youtube_video_url"
+        android:inputType="textUri" />
+
+    <EditText
+        android:id="@+id/edit_post_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/app_name"
+        android:drawableStart="@drawable/ic_message"
+        android:drawablePadding="8dp"
+        android:hint="@string/message"
+        android:inputType="text" />
+
+</LinearLayout>

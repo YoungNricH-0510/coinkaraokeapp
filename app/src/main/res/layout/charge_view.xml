@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/edit_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:autofillHints="@string/app_name"
+        android:drawableStart="@drawable/ic_coin_dark"
+        android:drawablePadding="8dp"
+        android:hint="@string/amount"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:text="@string/pay_with" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:id="@+id/img_visa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/visa"
+                android:contentDescription="@string/charge_with_visa_card"
+                android:scaleType="fitXY" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:id="@+id/img_paypal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/paypal"
+                android:contentDescription="@string/charge_with_paypal"
+                android:scaleType="fitXY" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:id="@+id/img_amazon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/amazon"
+                android:contentDescription="@string/charge_with_amazon"
+                android:scaleType="fitXY" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
